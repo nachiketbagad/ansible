@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Git Repository') {
             steps {
-                git branch: 'main', credentialsId: 'ansible-ssh', url: 'https://github.com/nachiketbagad/ansible.git'
+                git branch: 'main', url: 'https://github.com/nachiketbagad/ansible.git'
             }
         }
 
